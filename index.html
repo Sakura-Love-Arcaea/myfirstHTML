@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>javascript入門</title>
+    <link href="./style.css" rel="stylesheet">
 </head>
 <body>
     <div style="color: blue; font-size: 20px;">
-        <h1>HTML新手筆記</h1>
+        <h1 style="margin-left: 20px;">HTML新手筆記</h1>
     </div>
 
 
-    <div style="border: 5px dashed blueviolet;">
-        <h2>如何撰寫CSS</h2><br>
+    <div class="default-background">
+        <h2 class="title">如何撰寫CSS</h2>
+        <h2 style="font-style: italic;">連結CSS file</h2>
+        <code>link href="./style.css" rel="stylesheet"</code><br>
         越裡面越優先<br>
         style可以調整的有:
         <ul title="style可以調整的有:">
@@ -26,8 +29,8 @@
     </div>
     
     
-    <div style="border: 5px dashed red;">
-        <h2>顏色篇</h2>
+    <div class="default-background">
+        <h2 class="title">顏色篇</h2>
         <ul>
             <li>可以放:<br>
                 #xxxxxx<br>
@@ -39,11 +42,11 @@
         </ul>
     </div>
 
-    <div style="padding: 20px; margin: 20px; border: 1px solid black; background-color: lightblue;">
-        <h2>padding & margin</h2>
+    <div class="default-background">
+        <h2 style="text-align: center; margin-top: 16px; margin-bottom: 16px;">padding & margin</h2>
         <p>在style中, 可以放入padding(一圈空間, 元件外), margin(外部一圈, 容器外)</p>
-        padding: (px)
-        <ul>
+        <p style="margin: 0 0 0.5rem;">padding: (px)</p>
+        <ul style="margin: 0.5rem 0 2rem; padding-left: 2rem;">
             <li>padding-top</li>
             <li>padding-botton</li>
             <li>padding-left</li>
@@ -51,7 +54,7 @@
             <li>也可以順時鐘輸入四個</li>
         </ul>
         margin: (px)
-        <ul>
+        <ul style="margin: 0.5rem 0 2rem; padding-left: 2rem;">
             <li>margin-top</li>
             <li>margin-botton</li>
             <li>margin-left</li>
@@ -67,7 +70,7 @@
         <p>用3D來解釋, float的東西的容器浮起來, 讓別的容器沒有障礙, 別的容器的元件會被推開</p>
 
         
-        <ul style="float:left; background: lightgrey;">
+        <ul style="float:left; background: lightgrey; margin-right: 20px;">
             <li>xxx</li>
             <li>yyy</li>
             <li>margin-left</li>
@@ -75,18 +78,18 @@
             <li>也可以順時鐘輸入四個</li>
             <li>可以負的</li>
         </ul>
-        <img src="./wall_paper.png" height="200" style="display: block;">
+        <img src="./wall_paper.png" height="200">
         
-        <p style="display: inline;">佔用空間:</p>
-        <span>display: </span>
+        <p style="clear: both;">佔用空間: display: </p>
         <ul>
             <li>block</li>
             <li>inline</li>
         </ul>
+        <p>clear: both 以取消推開(新行)</p>
     </div>
 
 
-    <div style="padding: 20px; margin: 20px; border: 1px solid black; background-color: lightblue;">
+    <div class="default-background">
         <h2>position</h2>
         <p><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" style="display: block;">參考資料!!!!</a></p>
         <p>設定成position會讓他獨立一層</p>
@@ -95,14 +98,16 @@
         
         <div style="float: left; background-color: aquamarine; height: 40px; width: 40px;"></div>
         <div style="position: sticky; bottom: 10px; margin-left: 10px; float: left; background-color: red; height: 40px; width: 40px;"></div>
-        <div style="display: inline; margin-left: 10px; float: left; background-color: greenyellow; height: 40px; width: 40px;"></div>
+        <div style="margin-left: 10px; float: left; background-color: greenyellow; height: 40px; width: 40px;"></div>
         
 
         <p style="clear: both; padding-top: 1em">blablablabla</p>
-
-
     </div>
 
+
+    <div class="default-background">
+        <table></table>
+    </div>
 
 
 
